@@ -1,0 +1,73 @@
+/*
+Theme Name: Simple Block
+Author: Nik Dow
+Author URI: http://www.cbdweb.net
+Description: A simple block of colour with a menu above.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: simple block
+Text Domain: simpleblock
+*/
+$defaultFonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headerColor: #1e347e;
+body {
+    font-family: $defaultFonts;
+    font-size: 12px;
+}
+div.menu-header-menu-container {
+    margin-top: 20px;
+}
+ul#menu-header-menu {
+    font-size: 13px;
+    >li {
+        float: left;
+        list-style-type: none;
+        &.current-menu-item {
+            font-weight: bold;
+        }
+        >a {
+            text-decoration: none;
+            &:hover {
+                font-style: italic;
+            }
+        }
+    }
+}
+.clearall {
+    clear: both;
+}
+h1.site-title {
+    font-size: 26px;
+    font-weight: bold;
+    background-color: $headerColor;
+    background-image: url(/wp-content/uploads/2015/11/avenuelogotrans1.png);
+    background-repeat: no-repeat;
+    background-position: 30% 22px;
+    text-indent: -9999px;
+    padding: 20px 0;
+    margin: 10px 0 0 0;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+h2.site-description {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: $headerColor;
+    background-image: url(/wp-content/uploads/2015/11/avenuelogotrans1.png);
+    background-repeat: no-repeat;
+    background-position: 30% -49px;
+    margin: 0 0px 10px 0;
+    padding: 0 0 20px 0;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+h4 {
+    font-size: 12px;
+    font-weight: bold;
+}
