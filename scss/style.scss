@@ -14,6 +14,8 @@ $headerColor: #1e347e;
 body {
     font-family: $defaultFonts;
     font-size: 12px;
+    margin: 0;
+    padding: 0;
 }
 div.menu-header-menu-container {
     margin-top: 20px;
@@ -48,20 +50,24 @@ h1.site-title {
     padding: 20px 0;
     margin: 10px 0 0 0;
     color: white;
-    border-radius: 10px 10px 0 0;
 }
 h2.site-description {
     font-size: 18px;
+    height: 50px;
     font-weight: bold;
     background-color: $headerColor;
     background-image: url(/wp-content/uploads/2015/11/avenuelogotrans1.png);
     background-repeat: no-repeat;
     background-position: 30% -49px;
     margin: 0 0px 10px 0;
-    padding: 0 0 20px 0;
-    text-align: center;
+    padding: 20px 0 0px 0;
+    text-indent: 70%;
     color: white;
-    border-radius: 0 0 10px 10px;
+}
+@media only screen and (max-width: 700px) {
+    h2.site-description {
+        text-indent: 30%;
+    }
 }
 h3 {
     font-size: 14px;
@@ -70,4 +76,7 @@ h3 {
 h4 {
     font-size: 12px;
     font-weight: bold;
+}
+div#content {
+    margin: 0 20px;
 }

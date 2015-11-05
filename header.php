@@ -35,6 +35,7 @@
     $description = get_bloginfo( 'description', 'display' );
     if ( $description || is_customize_preview() ) : ?>
         <h2 class="site-description"><?php echo $description; ?></h2>
-    <?php endif;
+    <?php endif; ?>
+    <div id="content" class="site-content">
     
     
