@@ -9,24 +9,32 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: simple block
 Text Domain: simpleblock
 */
-$defaultFonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$menuFonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$defaultFonts: Georgia,"Times New Roman",Times,serif;
 $headerColor: #1e347e;
+$fontColor: #2e344e;
 $reversalColor: #CCF;
 html, body {
     height: 100%;
 }
 body {
-    font-family: $defaultFonts;
-    font-size: 12px;
+    font: 100 16px/22px $defaultFonts;
     margin: 0;
     padding: 0;
-    color: $headerColor;
+    color: $fontColor;
+}
+div#page { // https://css-tricks.com/snippets/css/sticky-footer/
+    min-height: 100%;
+    margin-bottom: -67px;
+    font: inherit;
+    font-size: 100%;
 }
 div.menu-header-menu-container {
     margin-top: 20px;
 }
 ul#menu-header-menu, ul#menu-footer-menu, div#copyright {
-    font-size: 13px;
+    font-family: $menuFonts;
+    font-size: 90%;
     >li {
         float: left;
         list-style-type: none;
@@ -37,7 +45,7 @@ ul#menu-header-menu, ul#menu-footer-menu, div#copyright {
     }
     a {
         text-decoration: none;
-        color: $headerColor;
+        color: $fontColor;
         &:hover {
             font-style: italic;
         }
@@ -56,9 +64,12 @@ ul#menu-footer-menu {
 .clearall {
     clear: both;
 }
+h1 {
+    font-size: 140%;
+    font-weight: bold;    
+}
 h1.site-title {
-    font-size: 26px;
-    font-weight: bold;
+    height: 50px;
     background-color: $headerColor;
     background-image: url(/wp-content/uploads/2015/11/avenuelogotrans1.png);
     background-repeat: no-repeat;
@@ -68,16 +79,16 @@ h1.site-title {
     margin: 10px 0 0 0;
     color: white;
 }
-h2.site-description {
-    font-size: 18px;
-    height: 50px;
+h2 {
+    font-size: 130%;
     font-weight: bold;
+    font-family: $menuFonts;
+}
+h2.site-description {
+    height: 50px;
     background-color: $headerColor;
-    background-image: url(/wp-content/uploads/2015/11/avenuelogotrans1.png);
-    background-repeat: no-repeat;
-    background-position: 30% -49px;
     margin: 0 0px 10px 0;
-    padding: 20px 0 0px 0;
+/*    padding: 20px 0 0px 0; */
     text-indent: 70%;
     color: $reversalColor;
 }
@@ -87,20 +98,21 @@ h2.site-description {
     }
 }
 h3 {
-    font-size: 14px;
+    font-size: 120%;
     font-weight: bold;
 }
 h4 {
-    font-size: 12px;
+    font-size: 110%;
     font-weight: bold;
 }
-div#page { // https://css-tricks.com/snippets/css/sticky-footer/
-    min-height: 100%;
-    margin-bottom: -67px;
-}
 div#content  {
-    width: 1000px;
+    max-width: 1000px;
     margin: 100px auto;
+    font: inherit;
+    font-size: 100%;
+}
+div#primary {
+    margin: 0 20px;
 }
 img.featured-image {
     float: left;
@@ -111,18 +123,21 @@ img.featured-image {
 }
 img.alignright {
     float: right;
-    margin-left: 10px;
+    margin: 0 0 10px 10px;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 6px 6px 2px 1px #999;
 }
 
 p {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 100%;
+    font-family: inherit;
 }
 div#footer {
-    font-size: 12px;
+    font-size: 90%;
     font-weight: normal;
     background-color: $headerColor;
-    padding: 9px 0 25px 0;
+    padding: 5px 0 31px 0;
     margin: 20px 0 0 0;
     color: $reversalColor;
 }
