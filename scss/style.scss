@@ -11,31 +11,48 @@ Text Domain: simpleblock
 */
 $defaultFonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headerColor: #1e347e;
+$reversalColor: #CCF;
+html, body {
+    height: 100%;
+}
 body {
     font-family: $defaultFonts;
     font-size: 12px;
     margin: 0;
     padding: 0;
+    color: $headerColor;
 }
 div.menu-header-menu-container {
     margin-top: 20px;
 }
-ul#menu-header-menu {
+ul#menu-header-menu, ul#menu-footer-menu, div#copyright {
     font-size: 13px;
     >li {
         float: left;
         list-style-type: none;
+        margin-right: 20px;
         &.current-menu-item {
             font-weight: bold;
         }
-        >a {
-            text-decoration: none;
-            &:hover {
-                font-style: italic;
-            }
+    }
+    a {
+        text-decoration: none;
+        color: $headerColor;
+        &:hover {
+            font-style: italic;
         }
     }
 }
+div.menu-footer-menu-container, div.menu-header-menu-container {
+    margin: 0 0 0 20%;
+}
+ul#menu-footer-menu {
+    margin: 0;
+    a {
+       color: $reversalColor;
+    }
+}
+
 .clearall {
     clear: both;
 }
@@ -62,7 +79,7 @@ h2.site-description {
     margin: 0 0px 10px 0;
     padding: 20px 0 0px 0;
     text-indent: 70%;
-    color: white;
+    color: $reversalColor;
 }
 @media only screen and (max-width: 700px) {
     h2.site-description {
@@ -77,6 +94,42 @@ h4 {
     font-size: 12px;
     font-weight: bold;
 }
-div#content {
-    margin: 0 20px;
+div#page { // https://css-tricks.com/snippets/css/sticky-footer/
+    min-height: 100%;
+    margin-bottom: -67px;
+}
+div#content  {
+    width: 1000px;
+    margin: 100px auto;
+}
+img.featured-image {
+    float: left;
+    margin: 0 50px 50px 0;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 6px 6px 2px 1px #999;
+}
+img.alignright {
+    float: right;
+    margin-left: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+}
+div#footer {
+    font-size: 12px;
+    font-weight: normal;
+    background-color: $headerColor;
+    padding: 9px 0 25px 0;
+    margin: 20px 0 0 0;
+    color: $reversalColor;
+}
+div#copyright {
+    float: right;
+    margin-right: 20px;
+    a {
+        color: $reversalColor;
+    }
 }

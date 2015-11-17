@@ -9,26 +9,40 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: simple block
 Text Domain: simpleblock
 */
+html, body {
+  height: 100%; }
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #1e347e; }
 
 div.menu-header-menu-container {
   margin-top: 20px; }
 
-ul#menu-header-menu {
+ul#menu-header-menu, ul#menu-footer-menu, div#copyright {
   font-size: 13px; }
-  ul#menu-header-menu > li {
+  ul#menu-header-menu > li, ul#menu-footer-menu > li, div#copyright > li {
     float: left;
-    list-style-type: none; }
-    ul#menu-header-menu > li.current-menu-item {
+    list-style-type: none;
+    margin-right: 20px; }
+    ul#menu-header-menu > li.current-menu-item, ul#menu-footer-menu > li.current-menu-item, div#copyright > li.current-menu-item {
       font-weight: bold; }
-    ul#menu-header-menu > li > a {
-      text-decoration: none; }
-      ul#menu-header-menu > li > a:hover {
-        font-style: italic; }
+  ul#menu-header-menu a, ul#menu-footer-menu a, div#copyright a {
+    text-decoration: none;
+    color: #1e347e; }
+    ul#menu-header-menu a:hover, ul#menu-footer-menu a:hover, div#copyright a:hover {
+      font-style: italic; }
+
+div.menu-footer-menu-container, div.menu-header-menu-container {
+  margin: 0 0 0 20%; }
+
+ul#menu-footer-menu {
+  margin: 0; }
+  ul#menu-footer-menu a {
+    color: #CCF; }
 
 .clearall {
   clear: both; }
@@ -56,7 +70,7 @@ h2.site-description {
   margin: 0 0px 10px 0;
   padding: 20px 0 0px 0;
   text-indent: 70%;
-  color: white; }
+  color: #CCF; }
 
 @media only screen and (max-width: 700px) {
   h2.site-description {
@@ -69,7 +83,41 @@ h4 {
   font-size: 12px;
   font-weight: bold; }
 
+div#page {
+  min-height: 100%;
+  margin-bottom: -67px; }
+
 div#content {
-  margin: 0 20px; }
+  width: 1000px;
+  margin: 100px auto; }
+
+img.featured-image {
+  float: left;
+  margin: 0 50px 50px 0;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 6px 6px 2px 1px #999; }
+
+img.alignright {
+  float: right;
+  margin-left: 10px; }
+
+p {
+  font-size: 14px;
+  line-height: 18px; }
+
+div#footer {
+  font-size: 12px;
+  font-weight: normal;
+  background-color: #1e347e;
+  padding: 9px 0 25px 0;
+  margin: 20px 0 0 0;
+  color: #CCF; }
+
+div#copyright {
+  float: right;
+  margin-right: 20px; }
+  div#copyright a {
+    color: #CCF; }
 
 /*# sourceMappingURL=style.css.map */
