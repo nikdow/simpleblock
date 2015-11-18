@@ -20,7 +20,7 @@ body {
 
 div#page {
   min-height: 100%;
-  margin-bottom: -67px;
+  margin: -14px 0 -56px;
   font: inherit;
   font-size: 100%; }
 
@@ -49,6 +49,9 @@ ul#menu-footer-menu {
   margin: 0; }
   ul#menu-footer-menu a {
     color: #CCF; }
+
+div.menu-header-menu-container > ul > li {
+  margin-top: 10px; }
 
 .clearall {
   clear: both; }

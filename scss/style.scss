@@ -25,7 +25,7 @@ body {
 }
 div#page { // https://css-tricks.com/snippets/css/sticky-footer/
     min-height: 100%;
-    margin-bottom: -67px;
+    margin: -14px 0 -56px;
     font: inherit;
     font-size: 100%;
 }
@@ -59,6 +59,9 @@ ul#menu-footer-menu {
     a {
        color: $reversalColor;
     }
+}
+div.menu-header-menu-container>ul>li {
+    margin-top: 10px;
 }
 
 .clearall {
