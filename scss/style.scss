@@ -10,7 +10,7 @@ Tags: simple block
 Text Domain: simpleblock
 */
 $menuFonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$defaultFonts: Georgia,"Times New Roman",Times,serif;
+$defaultFonts: 'Quattrocento',Georgia,"Times New Roman",Times,serif;
 $headerColor: #1e347e;
 $fontColor: #2e344e;
 $reversalColor: #CCF;
@@ -18,7 +18,7 @@ html, body {
     height: 100%;
 }
 body {
-    font: 100 16px/22px $defaultFonts;
+    font: 400 16px/22px $defaultFonts;
     margin: 0;
     padding: 0;
     color: $fontColor;
