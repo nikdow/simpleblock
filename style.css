@@ -111,9 +111,18 @@ img.featured-image {
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow: 6px 6px 2px 1px #999; }
 
+div.gallery img {
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 6px 6px 2px 1px #999; }
+
 img.alignright {
   float: right;
   margin: 0 0 15px 15px; }
+
+img.alignleft {
+  float: left;
+  margin: 0 15px 15px 0; }
 
 p {
   font-size: 100%;
