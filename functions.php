@@ -19,3 +19,21 @@ add_action( 'init', 'simpleblock_register_menu' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'html5' );
 
+/**
+ * Register widgetized areas.
+ *
+ */
+function simpleblock_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'footer',
+		'id'            => 'footer_widget',
+		'before_widget' => '<div id="footer_widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="footer_widget">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'simpleblock_widgets_init' );
+?>
