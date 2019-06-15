@@ -10,55 +10,77 @@ Tags: simple block
 Text Domain: simpleblock
 */
 html, body {
-  height: 100%; }
+  height: 100%;
+}
 
 body {
   font: 400 16px/22px "Quattrocento", Georgia, "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
-  color: #020306; }
+  color: #020306;
+}
 
 div#page {
   min-height: 100%;
   margin: -14px 0 -56px;
   font: inherit;
-  font-size: 100%; }
+  font-size: 100%;
+}
+
+ul#mega-menu-header-menu > li.astm-search-menu {
+  margin: 0 0px 0 0;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+}
 
 div.menu-header-menu-container {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 ul#menu-header-menu, ul#menu-footer-menu, div#copyright {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 90%; }
-  ul#menu-header-menu > li, ul#menu-footer-menu > li, div#copyright > li {
-    float: left;
-    list-style-type: none;
-    margin-right: 20px; }
-    ul#menu-header-menu > li.current-menu-item, ul#menu-footer-menu > li.current-menu-item, div#copyright > li.current-menu-item {
-      font-weight: bold; }
-  ul#menu-header-menu a, ul#menu-footer-menu a, div#copyright a {
-    text-decoration: none;
-    color: #020306; }
-    ul#menu-header-menu a:hover, ul#menu-footer-menu a:hover, div#copyright a:hover {
-      font-style: italic; }
+  font-size: 90%;
+}
+ul#menu-header-menu > li, ul#menu-footer-menu > li, div#copyright > li {
+  float: left;
+  list-style-type: none;
+  margin-right: 20px;
+}
+ul#menu-header-menu > li.current-menu-item, ul#menu-footer-menu > li.current-menu-item, div#copyright > li.current-menu-item {
+  font-weight: bold;
+}
+ul#menu-header-menu a, ul#menu-footer-menu a, div#copyright a {
+  text-decoration: none;
+  color: #020306;
+}
+ul#menu-header-menu a:hover, ul#menu-footer-menu a:hover, div#copyright a:hover {
+  font-style: italic;
+}
 
 div.menu-footer-menu-container, div.menu-header-menu-container {
-  margin: 0 0 0 20%; }
+  margin: 0 0 0 20%;
+}
 
 ul#menu-footer-menu {
-  margin: 0; }
-  ul#menu-footer-menu a {
-    color: #CCF; }
+  margin: 0;
+}
+ul#menu-footer-menu a {
+  color: #CCF;
+}
 
 div.menu-header-menu-container > ul > li {
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 .clearall {
-  clear: both; }
+  clear: both;
+}
 
 h1 {
   font-size: 140%;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 h1.site-title {
   height: 50px;
@@ -69,12 +91,14 @@ h1.site-title {
   text-indent: -9999px;
   padding: 20px 0;
   margin: 10px 0 0 0;
-  color: white; }
+  color: white;
+}
 
 h2 {
   font-size: 130%;
   font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 h2.site-description {
   height: 50px;
@@ -82,51 +106,63 @@ h2.site-description {
   margin: 0 0px 10px 0;
   /*    padding: 20px 0 0px 0; */
   text-indent: 70%;
-  color: #CCF; }
+  color: #CCF;
+}
 
 @media only screen and (max-width: 700px) {
   h2.site-description {
-    text-indent: 30%; } }
+    text-indent: 30%;
+  }
+}
 h3 {
   font-size: 120%;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 h4 {
   font-size: 110%;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 div#content {
   max-width: 1000px;
   margin: 100px auto;
   font: inherit;
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 div#primary {
-  margin: 0 20px; }
+  margin: 0 20px;
+}
 
 img.featured-image {
   float: left;
   margin: 0 50px 50px 0;
   -moz-box-shadow: 3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow: 6px 6px 2px 1px #999; }
+  box-shadow: 6px 6px 2px 1px #999;
+}
 
 div.gallery img {
   -moz-box-shadow: 3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow: 6px 6px 2px 1px #999; }
+  box-shadow: 6px 6px 2px 1px #999;
+}
 
 img.alignright {
   float: right;
-  margin: 0 0 15px 15px; }
+  margin: 0 0 15px 15px;
+}
 
 img.alignleft {
   float: left;
-  margin: 0 15px 15px 0; }
+  margin: 0 15px 15px 0;
+}
 
 p {
   font-size: 100%;
-  font-family: inherit; }
+  font-family: inherit;
+}
 
 div#footer {
   font-size: 90%;
@@ -134,12 +170,15 @@ div#footer {
   background-color: #1e347e;
   padding: 5px 0 31px 0;
   margin: 20px 0 0 0;
-  color: #CCF; }
+  color: #CCF;
+}
 
 div#copyright {
   float: right;
-  margin-right: 20px; }
-  div#copyright a {
-    color: #CCF; }
+  margin-right: 20px;
+}
+div#copyright a {
+  color: #CCF;
+}
 
 /*# sourceMappingURL=style.css.map */

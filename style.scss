@@ -29,6 +29,12 @@ div#page { // https://css-tricks.com/snippets/css/sticky-footer/
     font: inherit;
     font-size: 100%;
 }
+ul#mega-menu-header-menu>li.astm-search-menu {
+    margin: 0 0px 0 0;
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+}
 div.menu-header-menu-container {
     margin-top: 20px;
 }
