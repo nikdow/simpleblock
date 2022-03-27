@@ -80,7 +80,6 @@ h1 {
 h1.site-title {
     height: 50px;
     background-color: $headerColor;
-    background-image: url(/wp-content/uploads/2015/11/avenuelogotrans1.png);
     background-repeat: no-repeat;
     background-position: 30% 22px;
     text-indent: -9999px;
@@ -99,7 +98,7 @@ h2 {
 h2.site-description {
     height: 50px;
     background-color: $headerColor;
-    margin: 0 0px 10px 0;
+    margin: 0 0 10px 0;
 /*    padding: 20px 0 0px 0; */
     text-indent: 70%;
     color: $reversalColor;
