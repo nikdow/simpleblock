@@ -28,7 +28,7 @@ div#page {
 }
 
 ul#mega-menu-header-menu > li.astm-search-menu {
-  margin: 0 0px 0 0;
+  margin: 0 0 0 0;
   display: inline-block;
   height: auto;
   vertical-align: middle;
@@ -90,6 +90,9 @@ h1.site-title {
   text-indent: -9999px;
   padding: 20px 0;
   margin: 10px 0 0 0;
+}
+h1.site-title a {
+  text-decoration: none;
   color: white;
 }
 
@@ -102,7 +105,7 @@ h2 {
 h2.site-description {
   height: 50px;
   background-color: #1e347e;
-  margin: 0 0px 10px 0;
+  margin: 0 0 10px 0;
   /*    padding: 20px 0 0px 0; */
   text-indent: 70%;
   color: #CCF;
