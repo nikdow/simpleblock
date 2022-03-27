@@ -30,7 +30,7 @@ div#page { // https://css-tricks.com/snippets/css/sticky-footer/
     font-size: 100%;
 }
 ul#mega-menu-header-menu>li.astm-search-menu {
-    margin: 0 0px 0 0;
+    margin: 0 0 0 0;
     display: inline-block;
     height: auto;
     vertical-align: middle;
@@ -87,6 +87,9 @@ h1.site-title {
     padding: 20px 0;
     margin: 10px 0 0 0;
     color: white;
+    a {
+        text-decoration: none;
+    }
 }
 h2 {
     font-size: 130%;
