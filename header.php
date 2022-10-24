@@ -26,7 +26,7 @@
 <div id="page" class="hfeed site">
     
     <!-- Header menu -->
-    
+    <?php do_shortcode('oxygen-responsive-menu')?>
     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
     
     <!-- page title -->
