@@ -1,3 +1,4 @@
+<?php /* Template Name: archive */ ?>
 <?php get_header(); ?>
 	<div id="main">
 		<?php if (have_posts()) : ?>
